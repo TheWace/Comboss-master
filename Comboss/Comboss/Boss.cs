@@ -10,7 +10,7 @@ namespace Comboss
     {
         private float life;
         private string name;
-        private Element element;
+        public Element element;
         private int level; 
 
         public Boss(float vie, string nom, Element e, int niv)
@@ -19,6 +19,16 @@ namespace Comboss
             name = nom;
             element = e;
             level = niv;
+        }
+
+        public Boolean Attaque(I_Damage damage, Element currentelem) {
+            if (life == 0 && element == oppose(currentelem)) {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

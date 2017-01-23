@@ -51,6 +51,7 @@
     <Compile Include="I_Damage.cs" />
     <Compile Include="MultDamage.cs" />
     <Compile Include="Attaque.cs" />
+    <Compile Include="OpposeElement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

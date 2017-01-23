@@ -14,7 +14,7 @@ namespace Comboss
         }
         public AddDamage(I_Damage damage, float amplitude) : base(damage, Element.NEUTRAL, amplitude)
         {
-
+            
         }
     }
 }
