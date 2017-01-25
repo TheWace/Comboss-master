@@ -22,7 +22,7 @@ namespace Comboss
 
         public bool IsOpposite(Element e1, Element e2)
         {
-            Element tmpE;
+            Element tmpE = Element.NEUTRAL;
             if (oppose.TryGetValue(e1, out tmpE)){
                 return (tmpE == e2);
             }
