@@ -8,15 +8,20 @@ namespace Comboss
 {
     class OpposeElement
     {
-        OpposeElement oE = new OpposeElement();
+        public static OpposeElement Instance { get; private set; } = new OpposeElement();
         Dictionary<Element, Element> oppose = new Dictionary<Element, Element>();
 
-        public void init() {
+        public OpposeElement() {
             oppose.Add(Element.NEUTRAL, Element.NEUTRAL);
-            oppose.Add(Element.FIRE, Element.WATER);
+
+            //WATER > FIRE
+            //FIRE > STONE
+            //STONE > WIND
+            //WIND > WATER
             oppose.Add(Element.WATER, Element.FIRE);
+            oppose.Add(Element.FIRE, Element.STONE);
             oppose.Add(Element.STONE, Element.WIND);
-            oppose.Add(Element.WIND, Element.STONE);
+            oppose.Add(Element.WIND, Element.WATER);
         }
 
 

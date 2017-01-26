@@ -26,6 +26,7 @@ namespace Comboss
             Console.WriteLine("Degats : " + a5.getDamage()); // 100
             Console.WriteLine("Element : " + a5.getElement()); //FEU
             Console.WriteLine("Ajout de l'element WATER :" + a6.getElement()); // 3
+
             Console.Read();
            
         }
